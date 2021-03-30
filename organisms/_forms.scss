@@ -1,0 +1,10 @@
+form{
+  legend {
+    @extend .typl8-epsilon;
+    font-family: $headingFontFamily;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    color: #252b2c;
+  }
+}

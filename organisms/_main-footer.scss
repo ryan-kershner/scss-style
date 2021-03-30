@@ -1,0 +1,22 @@
+#mainFooter {
+  @include layoutMain;
+  background: $white;
+  color: $greyDark;
+  font-size: 90%;
+  text-align: center;
+
+  h2 {
+    color: $greyDark;
+    font-size: 1rem;
+    padding: 2rem 0;
+  }
+
+  a {
+    @include linkStateChange($greyDark);
+    display: inline-block;
+
+    &:hover, &:focus {
+      color: $grey;
+    }
+  }
+}

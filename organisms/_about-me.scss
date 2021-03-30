@@ -1,0 +1,36 @@
+#aboutRyan {
+  @include layoutMain;
+  background: $greyLight url(#{$imageDir}ryan-kershner-headshot.png) 75% center no-repeat;
+
+  h2 {
+    color: $greyDark;
+    font-size: 1rem;
+    padding-top: 3rem;
+  }
+
+  h3 {
+    margin: 1.5rem 0 .5rem;
+    padding: 0 45% 1rem 0;
+  }
+
+  P {
+      color: $greyHeaderOptions;
+      padding: 0 45% 1rem 0;
+
+      &:last-child {
+        padding-bottom: 3rem;
+      }
+  }
+
+  
+
+  @include bp(mama-bear) {
+    background: $greyLight url(#{$imageDir}ryan-kershner-headshot.png) center 95% no-repeat;
+    padding-bottom: 13rem;
+    text-align: center;
+
+    h3, p {
+      padding-right: 0;
+    }
+  }
+}
