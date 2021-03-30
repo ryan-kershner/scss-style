@@ -1,0 +1,20 @@
+.linkStyledAsSecondaryButton{
+  @extend .button;
+  @extend .secondaryButton;
+  color: $white;
+
+  &:visited{
+    color: $white;
+    background-color: $secondaryColor;
+  }
+
+  &:hover, &:focus{
+    color: $white;
+    background-color: darken($secondaryColor, $hoverFocusShading);
+  }
+
+  &:active{
+    color: $white;
+    background-color: darken($secondaryColor, $activeShading);
+  }
+}
