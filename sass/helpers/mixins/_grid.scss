@@ -1,0 +1,13 @@
+@mixin grid($params){
+  $columns: map-get($params, columns); // Expects a list like columns: 40% 30% 5% 25%
+
+  // @each will not work for duplicate values in the list
+  @for $i from 1 through length($columns){
+    .column-#{$i} {
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      width: nth($columns, $i);
+    }
+  }
+}

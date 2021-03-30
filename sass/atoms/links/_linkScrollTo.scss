@@ -1,0 +1,21 @@
+.linkScrollTo{
+  @include linkStateChange($linkColor);
+  cursor: pointer;
+  position: relative;
+  padding: 5px 0 30px;
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+  &:active, &:visited {
+    text-decoration: none;
+  }
+
+  &:after{
+    @extend .ptcusys-icon-arrow-down-addon, :after;
+    position: absolute;
+    bottom: 3px;
+    right: 40%;
+  }
+}

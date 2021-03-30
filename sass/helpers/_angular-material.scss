@@ -1,0 +1,55 @@
+.md-dialog-container, .md-scroll-mask {
+  //z-index: 2000 !important;
+}
+
+md-dialog.md-default-theme, md-dialog {
+  border-radius: 0;
+}
+
+.md-button {
+  @include buttonStateChange($greyDark, $grey);
+  border: none;
+  cursor: pointer;
+  padding: .5rem .7rem;
+  transition: $transition-ease !important;
+  text-transform: inherit;
+  min-height: inherit;
+  border-radius: 0;
+  line-height: inherit;
+  margin: 0 8px 0 0;
+}
+.primaryButton.md-button {
+  @include buttonStateChange($white, $primaryButton);
+}
+
+.md-cancel-button {
+  @extend .button;
+  color: $greyDark !important;
+}
+
+
+.md-confirm-button.md-default-theme, .md-confirm-button:focus {
+  @include buttonStateChange($white, $primaryButton);
+  color: $white !important;
+  background: $primaryButton !important;
+}
+
+.md-button.md-default-theme:not([disabled]):hover, .md-button:not([disabled]):hover {
+
+}
+
+
+md-input-container:not(.md-input-invalid).md-input-focused label {
+  color: $greyDark;
+}
+md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+  border-color: $grey;
+}
+
+md-input-container {
+  width: 100%;
+  padding: 0;
+  input {
+    width: 100%;
+  }
+}

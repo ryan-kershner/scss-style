@@ -1,0 +1,21 @@
+.linkStyledAsPrimaryButton{
+  @extend .button;
+  @extend .primaryButton;
+  color: $white;
+
+  &:visited{
+    color: $white;
+    background-color: $primaryButton;
+  }
+  
+  &:hover, &:focus{
+    color: $white;
+    background-color: darken($primaryButton, $hoverFocusShading);
+  }
+
+  &:active{
+    color: $white;
+    background-color: darken($primaryButton, $activeShading);
+  }
+
+}

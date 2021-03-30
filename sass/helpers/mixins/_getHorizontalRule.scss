@@ -1,0 +1,21 @@
+@mixin getHorizontalRule($inputs: ()) {
+  //Setting defaults
+  $defaults: (width: 100%,
+              margin: 30px auto 10px,
+              borderStyle: solid,
+              borderWidth: 1px,
+              borderColor:$grey,
+              display: block
+              );
+
+  $options: map-merge($defaults, $inputs);
+
+  clear: both;//to avoid floating elements from overlapping separator
+  display: map-get($options, display);
+  margin:  map-get($options, margin);
+  border-style:  map-get($options, borderStyle);
+  border-width:  map-get($options, borderWidth);
+  border-color:  map-get($options, borderColor);
+  width: map-get($options, width);
+
+}

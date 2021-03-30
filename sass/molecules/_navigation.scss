@@ -1,0 +1,39 @@
+.myAccountSubmenu {
+  background: $white;
+  position: absolute;
+  top: 105px;
+  right: 0;
+  z-index: 100;
+  min-width: 160px;
+  box-shadow: 0 2px 2px $grey;
+
+  @include bp(lazy-bear){
+    right: 0;
+    top: 60px;
+  }
+  li {
+    margin: 0;
+    font-size: 15px;
+    line-height: 19px;
+    background-color: $white;
+
+    a {
+      color: $black2;
+      display: block;
+      font-weight: 500;
+      padding: 10px 15px;
+
+      &:hover{
+        background: $black2;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    span {
+      display: block;
+      padding: 10px 15px;
+      border-bottom: 1px solid lighten($greyLight, 8%);
+    }
+  }
+}

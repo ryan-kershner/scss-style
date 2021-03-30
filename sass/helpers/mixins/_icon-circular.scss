@@ -1,0 +1,33 @@
+@mixin icon-circular($inputs: ()){
+  //Setting defaults
+  $defaults: (
+    backgroundColor: $transparent,
+    backgroundPosition: auto,
+    backgroundSize: auto,
+    backgroundRepeat: no-repeat,
+    backgroundClip: border-box,
+    backgroundOrigin: border-box,
+    backgroundAttachment: scroll,
+    backgroundImage: none,
+    borderRadius: 50%,
+    color: $baseColor,
+    width: auto,
+    height: auto
+  );
+
+  $options: map-merge($defaults, $inputs);
+
+  background-color: map-get($options, backgroundColor);
+  background-position: map-get($options, backgroundPosition);
+  background-size: map-get($options, backgroundSize);
+  background-repeat: map-get($options, backgroundRepeat);
+  background-clip: map-get($options, backgroundClip);
+  background-origin: map-get($options, backgroundOrigin);
+  background-attachment: map-get($options, backgroundAttachment);
+  background-image: map-get($options, backgroundImage);
+  border-radius: map-get($options, borderRadius);
+  color:  map-get($options, color);
+  display: inline-block;
+  width: map-get($options, width);
+  height: map-get($options, height);
+}

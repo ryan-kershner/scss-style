@@ -1,0 +1,11 @@
+// To be used on a list tag <ol> or <ul>
+@mixin listGrid($params){
+  $gridWidth: 99%;
+
+  >li{
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: $gridWidth / map-get($params, columnCount);
+  }
+}

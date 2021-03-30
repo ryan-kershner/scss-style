@@ -1,0 +1,43 @@
+$_basefontSize: 16px; //Setting the base font size as 16px.
+
+// Base image directory
+  $imageDir: "../img/";
+  $logoDir: $imageDir + "logos/";
+  $socialIconsDir: $imageDir + "social-media-icons/";
+  $homeFeaturedDir: $imageDir + "homepage-featured/";
+  $bodyBg: '#{$imageDir}t1_background.jpg';
+
+//Fonts
+  $textFontFamily: "Libre Franklin",sans-serif;
+  $headingFontFamily: "Roboto Slab", serif;
+
+  $_fontpath: "../fonts/";
+  $icomoon-font-path: "#{$_fontpath}icomoon";
+
+
+// Transitions
+  $transitionTiming: 0.3s;
+  $transition-ease: all $transitionTiming ease;
+  $transition-ease-in: all $transitionTiming linear;
+
+  $borderColor: #d9d9d9;
+  $slideDown : top 100ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+
+  $_width : 80%;
+  $_heightHeader : 45px;
+  $boxShadow : 0px 1px 1px lighten($greyDark, 40%);
+
+  $tl: 0.6s; // transition length
+  $openSearch : cubic-bezier(0,1.22,.66,1);
+  $textShadow : 1px 1px 1px $greyDark;
+
+//grid of 5 columns
+  $fiveBlock : 18%;
+  $fourBlock : 23.1%;
+  $threeBlock : 31.6%;
+  $twoBlock : 48.6%;
+  $oneBlock : 100%;
+
+  $headerHeight: 56px;
+  $headerElementHeight: 38px;
+  $seperatorMargin: 70px auto 70px;

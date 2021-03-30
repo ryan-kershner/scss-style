@@ -1,0 +1,18 @@
+// Link Hover/Focus/Active Color Changes
+
+@mixin linkStateChange($color) {
+  color: $color;
+  transition: $transition-ease;
+
+  &:hover, &:focus {
+    color: darken($color, $hoverFocusShading);
+  }
+
+  &:active{
+    color: darken($color, $activeShading);
+  }
+
+  /**&:visited {
+    color: $color;
+  }**/
+}

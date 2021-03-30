@@ -1,0 +1,16 @@
+@mixin textEllipsis($inputs: ()){
+  //Setting defaults
+  $defaults: (
+    display: inline-block,
+    maxWidth: 150px
+  );
+
+  $options: map-merge($defaults, $inputs);
+
+  display: map-get($options, display);
+  max-width: map-get($options, maxWidth);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}

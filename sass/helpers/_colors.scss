@@ -1,0 +1,49 @@
+// Colors - PTC Branded - Do not add/remove colors. Create "lighten" and "darken" for greys, hover/active/focus states only;
+
+// Primary
+  $greenLight: #71bf49;
+  $blue: #7395ae;
+  $red: #912f46;
+  $orange: #f38800;
+  $greenPrimary : #72AD7F;
+
+// Secondary
+  $green: #72ADA8;
+  $blueDark: #557a95;
+  $yellow: #f1b434;
+  $purple: #9772AD;
+  $brown: #AF8C74;
+
+// Universal
+  $greyDark: #5d5c61;
+  $grey: #938E94;
+  $grey1: #020202;
+  $grey2: #979797;
+  $grey3: #9B9B9B;
+  $greyLight: #fafafa;
+  $white: #ffffff;
+  $white1: #f7f7f7;
+  $transparent: transparent;
+  $adobeXdDefaultGrey: #707070;
+
+// Objects
+  $baseColor: darken($greyDark, 10%);
+  $lcMainColor: $blue;
+  $border: $greyLight;
+  $linkColor: $blue;
+  $greyBackground: lighten($greyLight, 10%);
+  $primaryButton: $green;
+  $secondaryColor: $grey;
+
+// Hover/Focus & Active Shading
+  $hoverFocusShading: 7%;
+  $activeShading: 14%;
+
+//other
+  $greyHeaderOptions : #586060;
+  $black : #000000;
+  $black1 : #4A4A4A;
+  $black2 : #3E3E3E;
+  $black3 : #1A1A1A;
+  $greenDark : #009400;
+  $greenDarker : #009000;

@@ -1,0 +1,536 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+%fonticon {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-right: .3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: icomoon !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ptcusys-icon-assessment:before {
+  @extend %fonticon;
+  content: "\e620";
+}
+
+.ptcusys-icon-lesson:before {
+  @extend %fonticon;
+  content: "\e606";
+}
+
+.ptcusys-icon-learning-path:before {
+  @extend %fonticon;
+  content: "\e60b";
+}
+
+.ptcusys-icon-mapping:before, .ptcusys-icon-mapping-connect:after {
+  @extend %fonticon;
+  content: "\e613";
+}
+
+.ptcusys-icon-reports:before {
+  @extend %fonticon;
+  content: "\e611";
+}
+
+.ptcusys-icon-customize:before {
+  @extend %fonticon;
+  content: "\e610";
+}
+
+.ptcusys-icon-bookmark:before {
+  @extend %fonticon;
+  content: "\e601";
+}
+
+.ptcusys-icon-custom:before, .ptcusys-icon-custom-addon:after {
+  @extend .icomoon;
+  color: #EDB44F;
+  content: "\e9c9";
+}
+
+.ptcusys-icon-custom-addon:after {
+  font-size: .6em !important;
+  position: absolute;
+}
+
+.ptcusys-icon-complete:before {
+  @extend %fonticon;
+  content: "\e603";
+}
+
+.ptcusys-icon-menu:before {
+  @extend %fonticon;
+  content: "\e604";
+}
+
+.ptcusys-icon-comment:before {
+  @extend %fonticon;
+  content: "\e615";
+}
+
+.ptcusys-icon-save:before {
+  @extend %fonticon;
+  content: "\e614";
+}
+
+.ptcusys-icon-delete:before {
+  @extend %fonticon;
+  content: "\e605";
+}
+
+.ptcusys-icon-class:before {
+  @extend %fonticon;
+  content: "\e60f";
+}
+
+.ptcusys-icon-arrow-right:before {
+  @extend %fonticon;
+  content: "\e60a";
+}
+
+.ptcusys-icon-arrow-up:before {
+  @extend %fonticon;
+  content: "\e609";
+}
+
+.ptcusys-icon-arrow-down:before, .ptcusys-icon-arrow-down-addon:after {
+  @extend %fonticon;
+  content: "\e608";
+}
+
+.ptcusys-icon-arrow-left:before {
+  @extend %fonticon;
+  content: "\e607";
+}
+
+.ptcusys-icon-recently-viewed:before {
+  @extend %fonticon;
+  content: "\e60d";
+}
+
+.ptcusys-icon-settings:before {
+  @extend %fonticon;
+  content: "\e60c";
+}
+
+.ptcusys-icon-course:before {
+  @extend %fonticon;
+  content: "\e612";
+}
+
+.ptcusys-icon-users:before {
+  @extend %fonticon;
+  content: "\e60e";
+}
+
+.ptcusys-icon-search:before {
+  @extend %fonticon;
+  content: "\e616";
+}
+
+.ptcusys-icon-assignments:before {
+  @extend %fonticon;
+  content: "\e600";
+}
+
+.ptcusys-icon-process:before {
+  @extend %fonticon;
+  content: "\e618";
+}
+
+.ptcusys-icon-file-structure:before {
+  @extend %fonticon;
+  content: "\e617";
+}
+
+.ptcusys-icon-plus:before, .ptcusys-icon-plus-addon:after {
+  @extend %fonticon;
+  content: "\e619";
+}
+
+.ptcusys-icon-plus-addon:after {
+  font-size: .4em !important;
+  position: absolute;
+  color: lighten($yellow, 5%);
+}
+
+.ptcusys-icon-minus:before {
+  @extend %fonticon;
+  content: "\e61a";
+}
+
+.ptcusys-icon-single-topic:before {
+  @extend %fonticon;
+  content: "\f016";
+}
+
+.ptcusys-icon-multiple-topics:before {
+  @extend %fonticon;
+  content: "\f0c5";
+}
+
+.ptcusys-icon-undo:before {
+  @extend %fonticon;
+  content: "\e61b";
+}
+
+.ptcusys-icon-trash:before {
+  @extend %fonticon;
+  content: "\e61c";
+}
+
+.ptcusys-icon-view:before, .ptcusys-icon-view-addon:after {
+  @extend %fonticon;
+  content: "\e61d";
+}
+
+.ptcusys-icon-revert-iteration:before {
+  @extend %fonticon;
+  content: "\e61e";
+}
+
+.ptcusys-icon-redo:before {
+  @extend %fonticon;
+  content: "\e61f";
+}
+
+.ptcusys-icon-create-new:before {
+  @extend %fonticon;
+  content: "\e621";
+}
+
+.ptcusys-icon-lightbulb:before {
+  @extend %fonticon;
+  content: "\f0eb";
+}
+
+.ptcusys-icon-image:before {
+  @extend %fonticon;
+  content: "\e622";
+}
+
+.ptcusys-icon-audio:before {
+  @extend %fonticon;
+  content: "\e623";
+}
+
+.ptcusys-icon-video:before {
+  @extend %fonticon;
+  content: "\e624";
+}
+
+.ptcusys-icon-expand:before {
+  @extend %fonticon;
+  content: "\e625";
+}
+
+.ptcusys-icon-contract:before {
+  @extend %fonticon;
+  content: "\e626";
+}
+
+.ptcusys-icon-list:before {
+  @extend %fonticon;
+  content: "\e627";
+}
+
+.ptcusys-icon-numbered-list:before {
+  @extend %fonticon;
+  content: "\e628";
+}
+
+.ptcusys-icon-attachment:before {
+  @extend %fonticon;
+  content: "\e629";
+}
+
+.ptcusys-icon-bold:before {
+  @extend %fonticon;
+  content: "\e62a";
+}
+
+.ptcusys-icon-underline:before {
+  @extend %fonticon;
+  content: "\e62b";
+}
+
+.ptcusys-icon-italic:before {
+  @extend %fonticon;
+  content: "\e62c";
+}
+
+.ptcusys-icon-indent-increase:before {
+  @extend %fonticon;
+  content: "\e62d";
+}
+
+.ptcusys-icon-indent-decrease:before {
+  @extend %fonticon;
+  content: "\e62e";
+}
+
+.ptcusys-icon-warning:before {
+  @extend %fonticon;
+  content: "\e62f";
+}
+
+.ptcusys-icon-plus-square:before {
+  @extend %fonticon;
+  content: "\f0fe";
+}
+
+.ptcusys-icon-minus-square:before {
+  @extend %fonticon;
+  content: "\f146";
+}
+
+.ptcusys-icon-note:before {
+  @extend %fonticon;
+  content: "\e630";
+}
+
+.ptcusys-icon-history:before {
+  @extend %fonticon;
+  content: "\e631";
+}
+
+.ptcusys-icon-graduation:before {
+  @extend %fonticon;
+  content: "\e633";
+}
+
+.ptcusys-icon-question-circle:before {
+  @extend %fonticon;
+  content: "\f059";
+}
+
+.ptcusys-icon-wrench:before {
+  @extend %fonticon;
+  content: "\e632";
+}
+
+.ptcusys-icon-code:before {
+  @extend %fonticon;
+  content: "\e634";
+}
+
+.ptcusys-icon-upload:before {
+  @extend %fonticon;
+  content: "\f093";
+}
+
+.ptcusys-icon-refresh:before {
+  @extend %fonticon;
+  content: "\e635";
+}
+
+.ptcusys-icon-home:before {
+  @extend %fonticon;
+  content: "\e636";
+}
+
+.ptcusys-icon-key:before {
+  @extend %fonticon;
+  content: "\e637";
+}
+
+.ptcusys-icon-visibility:before {
+  @extend %fonticon;
+  content: "\e638";
+}
+
+.ptcusys-icon-visibility-off:before {
+  @extend %fonticon;
+  content: "\e639";
+}
+
+.ptcusys-icon-close:before {
+  @extend %fonticon;
+  content: "\ed65";
+}
+
+.ptcusys-icon-userSetting:before {
+  @extend %fonticon;
+  content: "\e644";
+}
+
+.ptcusys-icon-modify:before {
+  @extend %fonticon;
+  content: "\e927";
+}
+
+.ptcusys-icon-signUp:before {
+  @extend %fonticon;
+  content: "\e901";
+}
+
+.ptcusys-icon-signIn:before {
+  @extend %fonticon;
+  content: "\e902";
+}
+
+.ptcusys-icon-videoCamera:before {
+  @extend %fonticon;
+  content: "\e904";
+}
+
+.ptcusys-icon-document:before {
+  @extend %fonticon;
+  content: "\e908";
+}
+
+.ptcusys-icon-forum:before {
+  @extend %fonticon;
+  content: "\e907";
+}
+
+.ptcusys-icon-pdf:before {
+  @extend %fonticon;
+  content: "\ef3e";
+}
+
+.ptcusys-icon-square-empty:before {
+  @extend %fonticon;
+  content: "\e903";
+}
+
+.ptcusys-icon-tree:before {
+  @extend %fonticon;
+  content: "\ec65";
+}
+
+//.ptcusys-icon-facebook:before {
+//  @extend %fonticon;
+//  content: "\e917";
+//}
+//
+//.ptcusys-icon-twitter:before {
+//  @extend %fonticon;
+//  content: "\eef5";
+//}
+//
+//.ptcusys-icon-linked-in:before {
+//  @extend %fonticon;
+//  content: "\ef29";
+//}
+
+.ptcusys-icon-mail:before {
+  @extend %fonticon;
+  content: "\e909";
+}
+
+.ptcusys-icon-user:before {
+  @extend %fonticon;
+  content: "\e90a";
+}
+
+.ptcusys-icon-info:before{
+  @extend %fonticon;
+  content: "\e654";
+}
+
+.ptcusys-icon-exit:before{
+  @extend %fonticon;
+  content: "\e801";
+}
+
+.ptcusys-icon-new-tab:before{
+  @extend %fonticon;
+  content: "\e910";
+}
+
+.ptcusys-icon-language:before{
+  @extend %fonticon;
+  content: "\e643";
+}
+
+.ptcusys-icon-remove:before{
+  @extend %fonticon;
+  content: "\e640";
+}
+
+.ptcusys-icon-switch:before{
+  @extend %fonticon;
+  content: "\e64a";
+}
+
+.ptcusys-icon-lock:before{
+  @extend %fonticon;
+  content: "\e90e";
+}
+
+
+.ptcusys-icon-move:before{
+  @extend %fonticon;
+  content: "\e911";
+}
+
+.ptcusys-icon-up:before{
+  @extend %fonticon;
+  content: "\e915";
+}
+
+.ptcusys-icon-down:before{
+  @extend %fonticon;
+  content: "\e912";
+}
+
+.ptcusys-icon-link:before {
+  @extend %fonticon;
+  content: "\e916";
+}
+
+.ptcusys-icon-filter:before {
+  @extend %fonticon;
+  content: "\e918";
+}
+
+.ptcusys-icon-book:before {
+  @extend %fonticon;
+  content: "\e91a";
+}
+
+.ptcusys-icon-cancel:before {
+  @extend %fonticon;
+  content: "\e937";
+}
+
+.ptcusys-icon-help:before {
+  @extend %fonticon;
+  content: "\e91c";
+}
+
+.ptcusys-icon-enlarge:before {
+  @extend %fonticon;
+  content: "\e989";
+}

@@ -1,0 +1,41 @@
+// Font-icon buttons. Had to create multiple background color choices due to a limnitation in libsass (doesn't consider transparent as a color to lighten or darken, fixed in ruby sass 3.4)
+
+@mixin fontIconButton($backgroundColor, $color, $iconHeight, $iconWidth) {
+  background: $backgroundColor;
+  color: $color;
+  height: 55px;
+  transition: $transition-ease;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-indent: 1000%;
+  white-space: nowrap;
+  width: $iconWidth;
+
+  &:hover, &:focus {
+    color: darken($color, $hoverFocusShading);
+    background: darken($backgroundColor, $hoverFocusShading);
+  }
+
+  &:active, &.active {
+    color: darken($color, $activeShading);
+    background: darken($backgroundColor, $activeShading);
+  }
+
+  &:disabled {
+    background: lighten($backgroundColor, 12%);
+
+    &:before {
+      opacity: .5;
+    }
+  }
+
+  &:before, &:after {
+    display: block;
+    opacity: 1;
+    padding: 0 !important;
+    position: absolute;
+    text-indent: 0;
+    transition: opacity 0.3s ease;
+  }
+}

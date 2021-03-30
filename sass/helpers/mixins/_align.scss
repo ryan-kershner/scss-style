@@ -1,0 +1,21 @@
+@mixin align($inputs:()){
+  $defaults: (
+    boxSizing: border-box,
+    display: inline-block,
+    width: 100%,
+    margin: auto,
+    padding: 0,
+    textAlign: center
+  );
+
+
+  $options: map-merge($defaults, $inputs);
+
+  //Writing CSS from $options
+  box-sizing: map-get($options,boxSizing);
+  display: map-get($options,display);
+  width: map-get($options, width);
+  margin: map-get($options, margin);
+  padding: map-get($options, padding);
+  text-align: map-get($options, textAlign);
+}

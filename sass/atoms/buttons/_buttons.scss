@@ -1,0 +1,59 @@
+// Button Hover/Focus/Active Color Changes
+
+@mixin buttonStateChange($color, $backgroundColor) {
+  background-color: $backgroundColor;
+  color: $color;
+
+  &:hover, &:focus {
+    background: darken($backgroundColor, $hoverFocusShading);
+  }
+
+  &:active {
+    background: darken($backgroundColor, $activeShading);
+  }
+}
+
+@mixin transparentActionElement($color) {
+  background-color: $transparent;
+  color: $color;
+
+  &:hover, &:focus {
+    color: darken($color, $hoverFocusShading);
+  }
+
+  &:active {
+    color: darken($color, $activeShading);
+  }
+}
+
+// Buttons
+button, .button {
+  border: 0;
+  cursor: pointer;
+  padding: .5rem .7rem;
+  transition: $transition-ease;
+}
+
+.buttonBlock{
+  display: block;
+  width: 100%;
+}
+
+.primaryButton {
+  @include buttonStateChange($white, $primaryButton);
+  @extend .button;
+  &:disabled {
+    color: darken($grey, 20%);
+    background: $grey;
+  }
+}
+
+.secondaryButton {
+  @include buttonStateChange($white, $secondaryColor);
+  @extend .button;
+  &:disabled {
+    color: darken($grey, 20%);
+    background: $grey;
+  }
+}
+

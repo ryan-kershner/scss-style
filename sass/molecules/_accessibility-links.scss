@@ -1,0 +1,22 @@
+// Skip Links for Screen readers & Keyboard navigation
+
+#accessibilityLinks {
+  position: absolute;
+  z-index: 999;
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    @extend %visuallyhidden;
+    background: $blue;
+    color: $white;
+    padding: 1rem;
+
+    &:active, &:focus {
+      @extend %visuallyshown;
+    }
+  }
+}

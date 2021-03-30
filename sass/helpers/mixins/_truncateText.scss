@@ -1,0 +1,51 @@
+@mixin truncateText($inputs: ()){
+  //Setting defaults
+  $defaults: (
+    lineHeight: 22px,
+    contentHeight: 66px
+  );
+
+  $options: map-merge($defaults, $inputs);
+
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* use this value to count block height */
+  line-height:  map-get($options, lineHeight);
+    /* max-height = line-height (1.2) * lines max number (3) */
+  max-height:  map-get($options, contentHeight);
+    /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+
+  /* */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.truncateText{
+  @include truncateText;
+}
+.truncateText:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+
+.truncateText:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  width: 1em;
+  /* set width and height */
+  height: 1em;
+  margin-top: 0.2em;
+  background: inherit;
+}
